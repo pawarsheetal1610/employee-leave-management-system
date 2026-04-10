@@ -1,0 +1,33 @@
+<h2>Dashboard</h2>
+
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+<div id="employee">
+    <h3>Leave Balance</h3>
+    <p id="balance">Loading...</p>
+  <h3>Apply Leave</h3>
+
+  <select id="type">
+    <option value="vacation">Vacation</option>
+    <option value="sick">Sick</option>
+  </select>
+
+  <input type="date" id="start">
+  <input type="date" id="end">
+  <input id="reason" placeholder="Reason">
+
+  <button onclick="applyLeave()">Submit</button>
+</div>
+
+<div id="manager">
+  <h3>Requests</h3>
+  <div id="requests"></div>
+</div>
+
+<div>
+  <h3>Calendar (Approved Leaves)</h3>
+  <div id="calendar"></div>
+</div>
+
+<script src="dashboard.js"></script>
